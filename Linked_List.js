@@ -137,7 +137,7 @@ class Node {
   
     insertAt(index, value){
   
-      if(!(index > this.#length)){
+      if(!(index > this.#length || index < 0)){
         let node = this.#head;
         let pre = this.#head;
         if(!(index === 0)){
@@ -160,7 +160,7 @@ class Node {
     }
   
     removeAt(index){
-      if(!(index > this.#length)){
+      if(!(index > this.#length || index < 0)){
         let node = this.#head;
         let pre = this.#head;
         if(!(index === 0)){
